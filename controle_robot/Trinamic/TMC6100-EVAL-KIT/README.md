@@ -15,3 +15,8 @@ LIEN GITHUB VERS CODE PYTHON FONCTIONNEL:
 Ce code fonctionne avec une connexion usb, soit entre la Trinamic et un PC, soit entre la Trinamic et une Raspberry.
 
 https://github.com/trinamic/PyTrinamic/blob/master/PyTrinamic/examples/evalboards/TMC4671/TMC4671_eval_BLDC_open_loop.py
+
+NOTES:
+
+- Si le voyant rouge de la carte s'allume, double cliquer sur Landunsbruecke puis decocher et recocher "enable drivers". Pour éviter qu'il s'allume, il faut decocher cette case avant d'alimenter les moteurs, puis la recocher.
+- Nous avons essayé 
