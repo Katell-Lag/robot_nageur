@@ -10,7 +10,7 @@ Manual : https://www.trinamic.com/fileadmin/assets/Support/Software/TMCL_referen
 Tuto de Trinamic: https://blog.trinamic.com/2020/02/25/driving-a-linear-stage-with-the-tmc4671/
 
 
-LIEN GITHUB VERS LE CODE PYTHON:
+LIEN GITHUB VERS CODE PYTHON FONCTIONNEL:
 
 Ce code fonctionne avec une connexion usb, soit entre la Trinamic et un PC, soit entre la Trinamic et une Raspberry.
 
