@@ -1,6 +1,6 @@
 CONTROLE DES TROIS MOTEURS EN BOUCLE OUVERTE AVEC LA BEAGLEBONE BLUE
 
-Ce dossier contient le code et les makefile nécessaires pour faire fonctionner les trois moteurs (moteur épaule et les 2 moteurs du bras) en boucle ouverte, à l'aide des encodeurs du moteur épaule et du moteur 1. Nous appelons moteur 1 le moteur relié au channel 1 et dont l'encodeur est également branché sur le 1. C'est le moteur dont l'axe est le plus bas.
+Ce dossier contient le code et les makefile nécessaires pour faire fonctionner les trois moteurs (moteur épaule et les 2 moteurs du bras) en boucle ouverte, à l'aide des encodeurs du moteur épaule (encodeur 4) et du moteur 1 (encodeur 1). Nous appelons moteur 1 le moteur relié au channel 1. C'est le moteur dont l'axe est le plus bas.
 A l'exécution du code, les trois moteurs simulent la trajectoire de crowl d'un bras. 
 NOTE: Nous ne l'avons fait fonctionné que sur table, car on rencontre des soucis de jeux entre les dents des engrenages.
 
@@ -29,4 +29,10 @@ rc_moteurs_synchros -c 3 -a -250000 -f 400 -s 1.0 -m 1400,1600
 
 EXPLICATIONS DE LA COMMANDE: 
 
-Le -c 3 correspond au channel du moteur épaule. Il faut donc bien le brancher sur ce channel. Le -m 1400,1600 correspond à la plage du pwm. Si on veut faire tourner le moteur plus ou moins vite il faut agrandir ou réduire cette plage centrée en 1500. Les autres paramètres sont des paramètres par défault.
+Le -c 3 correspond au channel du moteur épaule. Il faut donc bien le brancher sur ce channel. Le -m 1400,1600 correspond à la plage du pwm. Si on veut faire tourner le moteur plus ou moins vite il faut agrandir ou réduire cette plage centrée en 1500. Le -s correspond au switch mode (celui que l'on utilise). Les autres paramètres sont des paramètres par défault.
+
+
+
+EXPLICATIONS DU CODE:
+
+Le contrôle se fait grâce aux valeurs des encodeurs (voir commentaires du code dans le switch mode).
