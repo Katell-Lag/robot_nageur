@@ -1,4 +1,13 @@
 # UTILISATION DE LA TMC4671+TMC6100-BOB
 
-La seule liaison possible entre une Raspberry et cette carte est le bus SPI.
+Ce dossier décrit nous tests pour faire fonctionner le bus SPI entre Raspberry et Trinamic.
+
+REMARQUE PRELIMINAIRE:
+
+Pour accéder à la Raspberry:
+
+Via un écran, aller dans /etc/wpa_supplicant et rentrer un réseau wifi et son mot de passe pour se connecter via ssh. 
+user: pi
+mdp: raspberry
+
 
