@@ -14,7 +14,7 @@ mdp: temppwd
 
 
 
-BRANCHEMENTS: voir schéma
+BRANCHEMENTS: voir schéma ARCHI_BBLUE.png
 
 
 
