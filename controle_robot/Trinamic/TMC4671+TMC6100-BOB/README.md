@@ -7,7 +7,11 @@ REMARQUE PRELIMINAIRE:
 Pour accéder à la Raspberry:
 
 Via un écran, aller dans /etc/wpa_supplicant et rentrer un réseau wifi et son mot de passe pour se connecter via ssh. 
+
 user: pi
+
 mdp: raspberry
+
+
 
 
