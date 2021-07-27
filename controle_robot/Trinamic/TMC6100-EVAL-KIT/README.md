@@ -1,10 +1,14 @@
 # UTILISATION DE LA TMC6100-EVAL-KIT (VIA TMCL-IDE ET CODE PYTHON).
 
+PRESENTATION:
+
+La TMC6100-EVAL-KIT est composée d'un microcontrôleur Landungsbrücke, deux cartes de liaisons Eselsbrücke, une carte "motion controller" TMC4671-EVAL et une carte driver TMC6100-EVAL. L'intérêt d'utiliser une telle carte par rapport à une BeagleBone est qu'elle est capable de contrôler un moteur BLDC en boucle fermée, aussi bien en couple qu'en position.
+
 TMCL-IDE:
 
 On accède au TMCL-IDE via usb.
 
-Branchements: voir schéma
+BRANCHEMENTSs: voir schéma
 
 Pour faire tourner un des moteurs BLDC: aller dans Wizards et entrer les paramètres visibles dans les captures d'écran du dossier robot_nageur/controle_robot/Trinamic/TMC6100-EVAL-KIT/Setup
 
