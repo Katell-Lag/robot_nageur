@@ -19,7 +19,7 @@ A l'exécution du code, les trois moteurs simulent la trajectoire de crowl d'un 
 ## Architecture 
 Ainsi l’architecture envisagée pour la structure finale du système serait la suivante :
 
-## AJOUTER SYNOPTIQUE BBB
+![architecture générale](https://github.com/Katell-Lag/robot_nageur/blob/main/controle_robot/beaglebone_blue/archi_generale.jpg?raw=true)
 
 ## Environnement :
 
@@ -31,7 +31,10 @@ La Beaglebone sur laquelle nous avons réalisé les tests est la BeagleBone-BB35
 
 ## Branchements : 
 
-*voir schéma ARCHI_BBLUE.png*
+*voir schéma ARCHI_BBLUE.png
+
+![architecture BBB](https://github.com/Katell-Lag/robot_nageur/blob/main/controle_robot/beaglebone_blue/ARCHI_BBBLUE.png?raw=true)
+
 
 ## Exécution de code :
 
