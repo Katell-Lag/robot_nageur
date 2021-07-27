@@ -30,6 +30,6 @@ https://github.com/trinamic/PyTrinamic/blob/master/PyTrinamic/examples/evalboard
 
 NOTES:
 
-- Si le voyant rouge de la carte s'allume, double cliquer sur Landunsbruecke puis decocher et recocher "enable drivers". Pour éviter qu'il s'allume, il faut decocher cette case avant d'alimenter les moteurs, puis la recocher.
-- Nous avons essayé de changer directement le firmware en suivant le tuto: https://blog.trinamic.com/2020/02/28/driving-a-linear-stage-with-the-tmc4671-firmware-adaptation/ mais cela a fait planté la carte. Si jamais cela arrive, court-circuiter id_clk et id_ch0, et redémarrer. On peut alors remettre l'ancien firmware disponible sur le site de Trinamic.
+- Si le voyant rouge de la carte s'allume, double cliquer sur Landunsbruecke puis decocher et recocher "enable drivers". Pour éviter qu'il s'allume, il faut décocher cette case avant d'alimenter les moteurs, puis la recocher.
+- Nous avons essayé de changer directement le firmware en suivant le tuto: https://blog.trinamic.com/2020/02/28/driving-a-linear-stage-with-the-tmc4671-firmware-adaptation/ mais cela a fait planter la carte. Si jamais cela arrive, court-circuiter id_clk et id_ch0, et redémarrer. On peut alors remettre l'ancien firmware disponible sur le site de Trinamic.
 - Le "direct mode" qui permet de contrôler le moteur sans passer par le Wizard fonctionne: https://blog.trinamic.com/2020/02/26/driving-a-linear-stage-with-the-tmc4671-controller-tuning/
