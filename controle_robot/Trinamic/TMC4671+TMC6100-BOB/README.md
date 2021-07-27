@@ -16,7 +16,7 @@ BRANCHEMENTS: voir schéma.
 
 CONTEXTE:
 
-Pour contrôler les moteurs avec la TMC4671+TMC6100-BOB, il faut d'une part envoyer les bons registres à la carte, et d'autre part configurer correctement la communication SPI.
+Pour contrôler les moteurs avec la TMC4671+TMC6100-BOB, il faut d'une part envoyer les bons registres à la carte, et d'autre part configurer correctement la communication SPI. Nous n'avons pas réussi à faire fonctionner le SPI, mais ce dossier rassemble nos pistes.
 
 REGISTRES:
 
