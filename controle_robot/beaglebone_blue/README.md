@@ -35,6 +35,8 @@ La Beaglebone sur laquelle nous avons réalisé les tests est la BeagleBone-BB35
 
 ![architecture BBB](https://github.com/Katell-Lag/robot_nageur/blob/main/controle_robot/beaglebone_blue/ARCHI_BBBlue.PNG?raw=true)
 
+c : type de connexion
+p : nombre de ports/fils envisagés
 
 ## Exécution de code :
 
