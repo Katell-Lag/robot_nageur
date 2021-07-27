@@ -27,7 +27,7 @@ Les registres que nous avons utilisés sont:
 
 COMMUNICATION SPI:
 
-Voir TMCAPI_EXAMPLE et TMCAPIEXAMPLE2.
+Voir TMCAPI_EXAMPLE et TMCAPI_EXAMPLE2.
 
 AUTRES METHODES:
 
