@@ -40,3 +40,8 @@ Le -c 3 correspond au channel du moteur épaule. Il faut donc bien le brancher s
 EXPLICATIONS DU CODE:
 
 Le contrôle se fait grâce aux valeurs des encodeurs (voir commentaires du code dans le switch mode).
+
+CONTROLE EN BOUCLE FERMEE
+
+Le code associé est librobotcontrol-1.0.4/examples/src/rc_moteurs_tour_entier_fonctionne.c
+Il s'agit d'un contrôle en vitesse. La variable "val" utilisée dans le SWEEP Mode est la valeur qui régule l'intervalle PWM de façon à avoir des différences de valeurs d'encodeur constantes. En effet, l'erreur correspond à ((valeur_actuelle_encodeur - valeur_ancienne_encodeur) - (valeur_de_reference)).
