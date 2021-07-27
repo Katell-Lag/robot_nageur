@@ -12,7 +12,7 @@ BRANCHEMENTS: voir schéma
 
 Pour faire tourner un des moteurs BLDC: aller dans Wizards et entrer les paramètres visibles dans les captures d'écran du dossier robot_nageur/controle_robot/Trinamic/TMC6100-EVAL-KIT/Setup
 
-La boucle fermée fonctionne.
+La boucle fermée fonctionne, ainsi que le FOC (Field Oriented Control).
 
 Manual : https://www.trinamic.com/fileadmin/assets/Support/Software/TMCL_reference.pdf
 
