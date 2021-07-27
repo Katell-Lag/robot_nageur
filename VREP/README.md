@@ -17,7 +17,9 @@ La commande se fait de cette manière: lorsque les objets ont atteint l'orientat
 
 La synchronisation des deux bras se fait avec un décalage d'indices: les deux bras parcourent de manière décalée le même tableau de valeurs.
 
-Nous avons également voulu simuler le milieu aqueux sous V-REP en ajoutant des frottements avec la fonction sim.addForceAndTorque lorsque le bras était censé être dans l’eau. Nous avons également testé différents paramètres comme la densité des pièces. La réaction du bras sous V-REP était alors imprévisible et peu réaliste, et nous avons laissé cette piste de côté.
+Nous avons également voulu simuler le milieu aqueux sous V-REP en ajoutant des frottements avec la fonction "*sim.addForceAndTorque*" lorsque le bras était censé être dans l’eau. Nous avons également testé différents paramètres comme la densité des pièces, leur poids etc. La réaction du bras sous V-REP s'est trouvée être imprévisible et peu réaliste, ainsi nous avons laissé cette piste de côté.
+
+###### Notes : il se peut que les simulations s'exécutent mal, à cause du temps de calcul et simulation trop lent.
 
 ### Coder sous V-REP
 
