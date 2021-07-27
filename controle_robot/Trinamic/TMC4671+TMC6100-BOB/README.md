@@ -42,6 +42,26 @@ Les registres que nous avons utilisés sont:
 
 Voir TMCAPI_EXAMPLE et TMCAPI_EXAMPLE2.
 
+Ces codes sont inspirés du tuto: http://blog.trinamic.com/2018/02/19/stepper-motor-with-tmc5160/
+
+Ce tuto explique comment relier une Raspberry Pi3 à une TMC5160-BOB.
+
+Nous avons essayé d'adapter le code de différentes manières pour faire fonctionner la liaison avec notre carte, mais sans succès.
+
+Nous utilisons la librairie bcm2835 pour configurer le SPI.
+
+Nous avons une incertitude sur les modes des PIN (HIGH ou LOW). De plus, a carte du tuto ne possède pas les mêmes PIN que la nôtre. Par exemple, nous avons supposé qu'il ne fallait pas se soucier du CLK.
+
+Concernant la fonction tmc4671_readwriteByte, elle doit être présente si l'on utilise la dernière version du TMC-API. Nous ne savons pas si elle est nécessaire dans notre cas.
+
+Les fonctions définies dans le TMC_SPI.c sont les fonctions permettant de transmettre les données en SPI, plus précisément d'écrire dans les registres de la carte via SPI.
+
+Nous avons essayé de lire des données provenant de la carte avec tmc4671_ReadInt mais sans succès. Il semble que la liaison ne se fasse pas.
+
+Après avoir réalisé des tests grâce à un loopback test avec l'API spidev, nous avons conclu que le problème n'était pas la Raspberry elle-même: https://www.raspberrypi.org/documentation/hardware/raspberrypi/spi/README.md
+
+A l'oscilloscope, nous avons également pu observer que des trames étaient bien envoyées de la Raspberry vers la Trinamic. Nous pensons donc que la Trinamic ne parvient pas à interpréter ces trames.
+
 #### AUTRES METHODES:
 
 Nous avons aussi utilisé d'autres méthodes qui n'ont pas fonctionné non plus, peut-être parce que les cartes utilisées dans ses librairies ne sont pas les mêmes: voir test_levref (à partir de https://github.com/trinamic/PyTrinamic/commit/4e6927a0448545c5d8767285cda3d14c63dbb35c) et tripipy (à partir de https://github.com/pootle/tripipy). 
