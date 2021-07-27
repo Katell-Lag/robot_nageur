@@ -1,6 +1,6 @@
 # UTILISATION DE LA TMC4671+TMC6100-BOB
 
-# Ce dossier décrit nos tests pour faire fonctionner le bus SPI entre Raspberry et Trinamic.
+### Ce dossier décrit nos tests pour faire fonctionner le bus SPI entre Raspberry et Trinamic.
 
 REMARQUE PRELIMINAIRE:
 
