@@ -2,7 +2,10 @@
 
 La carte BeagleBone Blue (BBBlue) est une carte de développement open source fonctionnant sous linux.
 Disposant de divers modules et interfaces (UART,SPI, IMU, Bluetooth) nécessaires pour notre utilisation et de connecteurs moteurs, cette carte est idéale pour la commande de nos moteurs.
+
 L’un des nombreux avantages de cette carte est que l’on peut accéder à son contenu (codes, exécutables…) via WIFI. On parle de liaison SSH. Cette liaison permet d’ouvrir une session interactive entre une machine distante et le client. Soit nous et la BBBlue (son environnement linux). Ainsi il nous est donc possible de modifier une commande sans démonter le système électronique.
+
+La BBBlue possède dès son utilisation tout une architecture linux. Elle possède également divers exemples de code suivant les modules utilisés, des configurations de GPIO ou autre. C’est donc avec l’appui de ces divers exemples que nous avons implémenté un code permettant de commander les 3 robots. 
 
 ## Notre utilisation de la BBBlue
 
@@ -22,14 +25,13 @@ Ainsi l’architecture envisagée pour la structure finale du système serait la
 
 L'image de la BeagleBone est debian et la librairie utilisée est librobotcontrol.
 La Beaglebone sur laquelle nous avons réalisé les tests est la BeagleBone-BB35. Pour accéder à son contenu, il faut se connecter en WIFI à celle-ci puis en SSH(Putty, WinSCP ...) avec les parmètres suivant : 
-ip: 192.168.8.1
-utilisateur: debian
-mdp: temppwd
+###### ip: 192.168.8.1
+###### utilisateur: debian
+###### mdp: temppwd
 
-##### Rappel : BBBlue travaille dans un univers linux.
+## Branchements : 
 
-
-## Branchements : voir schéma ARCHI_BBLUE.png
+*voir schéma ARCHI_BBLUE.png*
 
 ## Exécution de code :
 
