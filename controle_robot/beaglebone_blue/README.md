@@ -1,5 +1,9 @@
-CONTROLE DES TROIS MOTEURS EN BOUCLE OUVERTE AVEC LA BEAGLEBONE BLUE
+# CONTROLE DES TROIS MOTEURS EN BOUCLE OUVERTE AVEC LA BEAGLEBONE BLUE
 
+La carte BeagleBone Blue (BBBlue) est une carte de développement open source fonctionnant sous linux.
+Disposant de divers modules et interfaces (UART,SPI, IMU, Bluetooth) nécessaires pour notre utilisation et de connecteurs moteurs, cette carte est idéale pour la commande de nos moteurs.
+
+ 
 Ce dossier contient le code et les makefile nécessaires pour faire fonctionner les trois moteurs (moteur épaule et les 2 moteurs du bras) en boucle ouverte, à l'aide des encodeurs du moteur épaule (encodeur 4) et du moteur 1 (encodeur 1). Nous appelons moteur 1 le moteur relié au channel 1. C'est le moteur dont l'axe est le plus bas.
 A l'exécution du code, les trois moteurs simulent la trajectoire de crowl d'un bras. 
 NOTE: Nous ne l'avons fait fonctionné que sur table, car on rencontre des soucis de jeux entre les dents des engrenages.
