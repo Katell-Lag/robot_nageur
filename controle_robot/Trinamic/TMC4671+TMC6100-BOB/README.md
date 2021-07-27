@@ -1,6 +1,6 @@
 # UTILISATION DE LA TMC4671+TMC6100-BOB
 
-Ce dossier décrit nous tests pour faire fonctionner le bus SPI entre Raspberry et Trinamic.
+Ce dossier décrit nos tests pour faire fonctionner le bus SPI entre Raspberry et Trinamic.
 
 REMARQUE PRELIMINAIRE:
 
@@ -11,6 +11,10 @@ Via un écran, aller dans /etc/wpa_supplicant/wpa_supplicant.conf et rentrer un 
 user: pi
 
 mdp: raspberry
+
+CONTEXTE
+
+Pour contrôler les moteurs avec la TMC4671+TMC6100-BOB, il faut d'une part
 
 
 
