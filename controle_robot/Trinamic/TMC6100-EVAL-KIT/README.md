@@ -16,7 +16,7 @@ La boucle fermée fonctionne, ainsi que le FOC (Field Oriented Control).*
 ## BRANCHEMENTS: 
 
 voir schéma
-
+![branchement usb](https://github.com/Katell-Lag/robot_nageur/blob/main/controle_robot/Trinamic/TMC6100-EVAL-KIT/ARCHI_usb.PNG?raw=true)
 
 
 ## DOCUMENTS UTILES
