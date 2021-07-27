@@ -16,7 +16,9 @@ La boucle fermée fonctionne.
 
 Manual : https://www.trinamic.com/fileadmin/assets/Support/Software/TMCL_reference.pdf
 
-Tuto de Trinamic: https://blog.trinamic.com/2020/02/25/driving-a-linear-stage-with-the-tmc4671/
+Tuto de Trinamic pour la configuration Wizard: https://blog.trinamic.com/2020/02/25/driving-a-linear-stage-with-the-tmc4671/
+
+Tuto en vidéo de la configuration Wizard: https://www.youtube.com/watch?v=g2BHEdvW9bU&t=32s
 
 
 LIEN GITHUB VERS CODE PYTHON FONCTIONNEL:
