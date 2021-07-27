@@ -26,6 +26,7 @@ mdp: raspberry
 #### BRANCHEMENTS: 
 
 voir schéma.
+[! branchement BOB](https://github.com/Katell-Lag/robot_nageur/blob/main/controle_robot/Trinamic/TMC4671+TMC6100-BOB/ARCHI_pi3.PNG?raw=true)
 
 #### CONTEXTE:
 
