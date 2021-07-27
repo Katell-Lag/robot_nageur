@@ -50,7 +50,7 @@ Nous avons essayé d'adapter le code de différentes manières pour faire foncti
 
 Nous utilisons la librairie bcm2835 pour configurer le SPI.
 
-Nous avons une incertitude sur les modes des PIN (HIGH ou LOW). De plus, a carte du tuto ne possède pas les mêmes PIN que la nôtre. Par exemple, nous avons supposé qu'il ne fallait pas se soucier du CLK.
+Nous avons une incertitude sur les modes des PIN (HIGH ou LOW). De plus, la carte du tuto ne possède pas les mêmes PIN que la nôtre. Par exemple, nous avons supposé qu'il ne fallait pas se soucier du CLK.
 
 Concernant la fonction tmc4671_readwriteByte, elle doit être présente si l'on utilise la dernière version du TMC-API. Nous ne savons pas si elle est nécessaire dans notre cas.
 
