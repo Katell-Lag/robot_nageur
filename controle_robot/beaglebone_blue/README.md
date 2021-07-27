@@ -21,6 +21,9 @@ Ainsi l’architecture envisagée pour la structure finale du système serait la
 
 ![architecture générale](https://github.com/Katell-Lag/robot_nageur/blob/main/controle_robot/beaglebone_blue/archi_generale.jpg?raw=true)
 
+c : type de connexion
+p : nombre de ports/fils envisagés
+
 ## Environnement :
 
 L'image de la BeagleBone est debian et la librairie utilisée est librobotcontrol.
@@ -31,12 +34,8 @@ La Beaglebone sur laquelle nous avons réalisé les tests est la BeagleBone-BB35
 
 ## Branchements : 
 
-*voir schéma ARCHI_BBLUE.png
-
+*voir schéma ARCHI_BBLUE.png*
 ![architecture BBB](https://github.com/Katell-Lag/robot_nageur/blob/main/controle_robot/beaglebone_blue/ARCHI_BBBlue.PNG?raw=true)
-
-c : type de connexion
-p : nombre de ports/fils envisagés
 
 ## Exécution de code :
 
