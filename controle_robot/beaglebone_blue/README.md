@@ -2,42 +2,48 @@
 
 La carte BeagleBone Blue (BBBlue) est une carte de développement open source fonctionnant sous linux.
 Disposant de divers modules et interfaces (UART,SPI, IMU, Bluetooth) nécessaires pour notre utilisation et de connecteurs moteurs, cette carte est idéale pour la commande de nos moteurs.
+L’un des nombreux avantages de cette carte est que l’on peut accéder à son contenu (codes, exécutables…) via WIFI. On parle de liaison SSH. Cette liaison permet d’ouvrir une session interactive entre une machine distante et le client. Soit nous et la BBBlue (son environnement linux). Ainsi il nous est donc possible de modifier une commande sans démonter le système électronique.
 
- 
-Ce dossier contient le code et les makefile nécessaires pour faire fonctionner les trois moteurs (moteur épaule et les 2 moteurs du bras) en boucle ouverte, à l'aide des encodeurs du moteur épaule (encodeur 4) et du moteur 1 (encodeur 1). Nous appelons moteur 1 le moteur relié au channel 1. C'est le moteur dont l'axe est le plus bas.
+## Notre utilisation de la BBBlue
+
+Ainsi disposant de 8 connecteurs moteurs et 4 pour les encodeurs, nous avons choisi de commander 3 moteurs Brushless contrôler par 2 encodeurs avec une unique BBBlue.
+Il sera donc nécessaire de disposer de 2 BBBlue pour commander l’ensemble des moteurs.
+Ce dossier contient donc le code et les makefile nécessaires pour faire fonctionner les trois moteurs (moteur épaule et les 2 moteurs du bras) en boucle ouverte, à l'aide des encodeurs du moteur épaule (encodeur 4) et du moteur 1 (encodeur 1). Nous appelons moteur 1 le moteur relié au channel 1-c'est le moteur dont l'axe est le plus bas-.
 A l'exécution du code, les trois moteurs simulent la trajectoire de crowl d'un bras. 
-NOTE: Nous ne l'avons fait fonctionné que sur table, car on rencontre des soucis de jeux entre les dents des engrenages.
 
-ENVIRONNEMENT:
+###### NOTE: Nous ne l'avons fait fonctionné que sur table, car on rencontre des soucis de jeux entre les dents des engrenages.
+
+## Architecture 
+Ainsi l’architecture envisagée pour la structure finale du système serait la suivante :
+
+## AJOUTER SYNOPTIQUE BBB
+
+## Environnement :
 
 L'image de la BeagleBone est debian et la librairie utilisée est librobotcontrol.
-La Beaglebone sur laquelle nous avons réalisé les tests est la BeagleBone-BB35. Pour se connecter: 
+La Beaglebone sur laquelle nous avons réalisé les tests est la BeagleBone-BB35. Pour accéder à son contenu, il faut se connecter en WIFI à celle-ci puis en SSH(Putty, WinSCP ...) avec les parmètres suivant : 
 ip: 192.168.8.1
 utilisateur: debian
 mdp: temppwd
 
+##### Rappel : BBBlue travaille dans un univers linux.
 
 
-BRANCHEMENTS: voir schéma ARCHI_BBLUE.png
+## Branchements : voir schéma ARCHI_BBLUE.png
 
+## Exécution de code :
 
-
-EXECUTION DU CODE:
-
+Vous trouverez dans le dossier *librobotcontrol-1.0.4/examples* plusieurs codes réalisant diverses commandes.  
 Le code fonctionnel est: librobotcontrol-1.0.4/examples/codes_tests/rc_moteurs_synchros.c
-Pour l'exécuter: se placer dans librobotcontrol-1.0.4/examples puis "make install".
-Ensuite revenir dans codes_tests et entrer:
-rc_moteurs_synchros -c 3 -a -250000 -f 400 -s 1.0 -m 1400,1600
+Pour l'exécuter il faut se placer dans le dossier *librobotcontrol-1.0.4/examples*, réaliser un "*make*" afin de créer l'exécutable du fichier de commande rc_moteurs_synchros.c.
+Ainsi le fichier exécutable est créé dans le dossier codes_tests et pour lancer l'exécution la commande à appliquer est la suivante :
+##### rc_moteurs_synchros -c 3 -a -250000 -f 400 -s 1.0 -m 1400,1600
 
-
-
-EXPLICATIONS DE LA COMMANDE: 
+### Commande
 
 Le -c 3 correspond au channel du moteur épaule. Il faut donc bien le brancher sur ce channel. Le -m 1400,1600 correspond à la plage du pwm. Si on veut faire tourner le moteur plus ou moins vite il faut agrandir ou réduire cette plage centrée en 1500. Le -s correspond au switch mode (celui que l'on utilise). Les autres paramètres sont des paramètres par défault.
 
-
-
-EXPLICATIONS DU CODE:
+### Explications du code
 
 Le contrôle se fait grâce aux valeurs des encodeurs (voir commentaires du code dans le switch mode).
 
