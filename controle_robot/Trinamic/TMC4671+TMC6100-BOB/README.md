@@ -10,6 +10,9 @@ En effet, cette commande FOC- appelée également "commande vectorielle"- permet
 
 La commande FOC est composée de deux forces Q (quadrature) et D (direct), perpendiculaires et respectivement parallèle à l'axe des pôles du rotor. 
 
+### Synoptique
+
+![image](https://user-images.githubusercontent.com/87979643/127165290-aca9550f-c24e-4490-8e84-b1ce6d385c75.png)
 
 ### Ce dossier décrit nos tests pour faire fonctionner le bus SPI entre Raspberry et Trinamic.
 
@@ -26,7 +29,8 @@ mdp: raspberry
 #### BRANCHEMENTS: 
 
 voir schéma.
-[! branchement BOB](https://github.com/Katell-Lag/robot_nageur/blob/main/controle_robot/Trinamic/TMC4671+TMC6100-BOB/ARCHI_pi3.PNG?raw=true)
+
+![image](https://github.com/Katell-Lag/robot_nageur/blob/main/controle_robot/Trinamic/TMC4671+TMC6100-BOB/ARCHI_pi3.PNG?raw=true)
 
 #### CONTEXTE:
 
