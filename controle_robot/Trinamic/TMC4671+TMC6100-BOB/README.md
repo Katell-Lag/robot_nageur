@@ -48,19 +48,21 @@ Ce tuto explique comment relier une Raspberry Pi3 à une TMC5160-BOB.
 
 Nous avons essayé d'adapter le code de différentes manières pour faire fonctionner la liaison avec notre carte, mais sans succès.
 
-Nous utilisons la librairie bcm2835 pour configurer le SPI.
+#### NOTES SUR LA COMMUNICATION SPI:
 
-Nous avons une incertitude sur les modes des PIN (HIGH ou LOW). De plus, la carte du tuto ne possède pas les mêmes PIN que la nôtre. Par exemple, nous avons supposé qu'il ne fallait pas se soucier du CLK.
+- Nous utilisons la librairie bcm2835 pour configurer le SPI.
 
-Concernant la fonction tmc4671_readwriteByte, elle doit être présente si l'on utilise la dernière version du TMC-API. Nous ne savons pas si elle est nécessaire dans notre cas.
+- Nous avons une incertitude sur les modes des PIN (HIGH ou LOW). De plus, la carte du tuto ne possède pas les mêmes PIN que la nôtre. Par exemple, nous avons supposé qu'il ne fallait pas se soucier du CLK.
 
-Les fonctions définies dans le TMC_SPI.c sont les fonctions permettant de transmettre les données en SPI, plus précisément d'écrire dans les registres de la carte via SPI.
+- Concernant la fonction tmc4671_readwriteByte, elle doit être présente si l'on utilise la dernière version du TMC-API. Nous ne savons pas si elle est nécessaire dans notre cas.
 
-Nous avons essayé de lire des données provenant de la carte avec tmc4671_ReadInt mais sans succès. Il semble que la liaison ne se fasse pas.
+- Les fonctions définies dans le TMC_SPI.c sont les fonctions permettant de transmettre les données en SPI, plus précisément d'écrire dans les registres de la carte via SPI.
 
-Après avoir réalisé des tests grâce à un loopback test avec l'API spidev, nous avons conclu que le problème n'était pas la Raspberry elle-même: https://www.raspberrypi.org/documentation/hardware/raspberrypi/spi/README.md
+- Nous avons essayé de lire des données provenant de la carte avec tmc4671_ReadInt mais sans succès. Il semble que la liaison ne se fasse pas.
 
-A l'oscilloscope, nous avons également pu observer que des trames étaient bien envoyées de la Raspberry vers la Trinamic. Nous pensons donc que la Trinamic ne parvient pas à interpréter ces trames.
+- Après avoir réalisé des tests grâce à un loopback test avec l'API spidev, nous avons conclu que le problème n'était pas la Raspberry elle-même: https://www.raspberrypi.org/documentation/hardware/raspberrypi/spi/README.md
+
+- A l'oscilloscope, nous avons également pu observer que des trames étaient bien envoyées de la Raspberry vers la Trinamic. Nous pensons donc que la Trinamic ne parvient pas à interpréter ces trames.
 
 #### AUTRES METHODES:
 
