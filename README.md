@@ -3,7 +3,7 @@ Ce dépôt rassemble les codes et les documents réalisés lors du stage ingéni
 
 Vous pourrez retrouver l'ensemble des scripts python et C, les fichiers des pièces 3D, datasheet et documentations utilisées.
 
-
+Un README a été créé pour chacun des dossier afin d'ajouter une description plus détaillée des documents disponibles.
 
 
 Pour tout renseignement supplémentaire contactez nous via les emails suivants :
