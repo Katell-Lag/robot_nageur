@@ -8,7 +8,7 @@ Voici une modélisation correspondant au système étudié lors de notre stage :
 ## Choix de cette conception du bras
 
 Cette conception du bras nous a été imposée par notre tuteur. Elle consiste à réaliser les rotations coudaire et du biceps à partir de la relation entre 2 moteurs de drones (AXI 2217/12 GOLD LINE). En effet, pour réaliser une rotation uniquement coudaire il suffit de n'activer qu'un des moteurs (dans ntore cas le moteur 1) et pour réaliser une rotation du biceps il nécessite d'ajouter l'effort réaliser par les 2 moteurs. Un ajout de réducteur ( système d'engrenage/roues dentées avec rapport de réduction 60:1) a été nécessaire pour obtenir une vitesse réelle de rotation du bras.
-Pour ce qui concerne l'épaule, le choix du moteur a été imposé également puisque nous l'avoir récupéré d'un autre projet. Vous pouvez retrouver l'étude de son couple et de ses caratérisque dans le document *Rapport_de projet_robotique* (lien) à la partie 4.1.1
+Pour ce qui concerne l'épaule, le choix du moteur a été imposé également puisque nous l'avoir récupéré d'un autre projet. Vous pouvez retrouver l'étude de son couple et de ses caratérisque dans le document *Rapport_de projet_robotique* (https://github.com/Katell-Lag/robot_nageur/blob/main/modelisation_3D/Rapport_de%20projet_robotique.pdf) à la partie 4.1.1
 
 ## Résultats obtenus
 
