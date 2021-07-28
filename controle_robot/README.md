@@ -18,7 +18,7 @@ Le choix de l'électronique de ce robot n'est pas encore faite. En effet, nous s
 Afin de réaliser notre robot il nous a fallut étudier comment le contrôler et comment le commander.
 Ainsi nous avons donc approximer notre système à ce schéma bloc :
 
-///////////image
+![schéma bloc](https://github.com/Katell-Lag/robot_nageur/blob/main/controle_robot/sch%C3%A9ma_bloc.png?raw=true)
 
 Ce type de système en boucle fermée nous permettra, grâce aux mesures effectuées par nos codeurs et IMU d’ajuster la commande envoyée à notre robot pour lui permettre d’effectuer un mouvement plus fluide, plus juste et de vérifier les positions au cours du temps. La commande envisagée est donc appelée « commande hybride couple-position ».
 
