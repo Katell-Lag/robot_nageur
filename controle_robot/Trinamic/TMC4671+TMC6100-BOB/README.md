@@ -14,6 +14,8 @@ La commande FOC est composée de deux forces Q (quadrature) et D (direct), perpe
 
 ![image](https://user-images.githubusercontent.com/87979643/127165290-aca9550f-c24e-4490-8e84-b1ce6d385c75.png)
 
+c: type de connexion     p : nombre de ports/fils envisagés
+
 ### Ce dossier décrit nos tests pour faire fonctionner le bus SPI entre Raspberry et Trinamic.
 
 #### REMARQUE PRELIMINAIRE:
