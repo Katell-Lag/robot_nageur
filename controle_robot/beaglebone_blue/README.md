@@ -5,7 +5,7 @@ Disposant de divers modules et interfaces (UART,SPI, IMU, Bluetooth) nécessaire
 
 L’un des nombreux avantages de cette carte est que l’on peut accéder à son contenu (codes, exécutables…) via WIFI. On parle de liaison SSH. Cette liaison permet d’ouvrir une session interactive entre une machine distante et le client. Soit nous et la BBBlue (son environnement linux). Ainsi il nous est donc possible de modifier une commande sans démonter le système électronique.
 
-La BBBlue possède dès son utilisation tout une architecture linux. Elle possède également divers exemples de code suivant les modules utilisés, des configurations de GPIO ou autre. C’est donc avec l’appui de ces divers exemples que nous avons implémenté un code permettant de commander les 3 robots. 
+La BBBlue possède dès son utilisation tout une architecture linux. Elle possède également divers exemples de code suivant les modules utilisés, des configurations de GPIO ou autre. C’est donc avec l’appui de ces divers exemples que nous avons implémenté un code permettant de commander les 3 moteurs. 
 
 ## Notre utilisation de la BBBlue
 
@@ -14,7 +14,7 @@ Il sera donc nécessaire de disposer de 2 BBBlue pour commander l’ensemble des
 Ce dossier contient donc le code et les makefile nécessaires pour faire fonctionner les trois moteurs (moteur épaule et les 2 moteurs du bras) en boucle ouverte, à l'aide des encodeurs du moteur épaule (encodeur 4) et du moteur 1 (encodeur 1). Nous appelons moteur 1 le moteur relié au channel 1-c'est le moteur dont l'axe est le plus bas-.
 A l'exécution du code, les trois moteurs simulent la trajectoire de crowl d'un bras. 
 
-###### NOTE: Nous ne l'avons fait fonctionné que sur table, car on rencontre des soucis de jeux entre les dents des engrenages.
+###### NOTE: Nous ne l'avons fait fonctionner que sur table, car on rencontre des soucis de jeux entre les dents des engrenages.
 
 ## Architecture 
 Ainsi l’architecture envisagée pour la structure finale du système serait la suivante :
@@ -37,14 +37,14 @@ La Beaglebone sur laquelle nous avons réalisé les tests est la BeagleBone-BB35
 *voir schéma ARCHI_BBLUE.png*
 ![architecture BBB](https://github.com/Katell-Lag/robot_nageur/blob/main/controle_robot/beaglebone_blue/ARCHI_BBBlue.PNG?raw=true)
 
-Remarque: les moteurs tournent sous du 12V, 3A
+Remarque: les moteurs tournent sous du 12V, 3A (max)
 
 ## Exécution de code :
 
 Vous trouverez dans le dossier *librobotcontrol-1.0.4/examples* plusieurs codes réalisant diverses commandes.  
 Le code fonctionnel est: librobotcontrol-1.0.4/examples/codes_tests/rc_moteurs_synchros.c
 Pour l'exécuter il faut se placer dans le dossier *librobotcontrol-1.0.4/examples*, réaliser un "*make*" afin de créer l'exécutable du fichier de commande rc_moteurs_synchros.c.
-Ainsi le fichier exécutable est créé dans le dossier codes_tests et pour lancer l'exécution la commande à appliquer est la suivante :
+Ainsi le fichier exécutable est créé dans le dossier codes_tests et pour lancer l'exécution la commande à entrer est la suivante :
 ##### rc_moteurs_synchros -c 3 -a -250000 -f 400 -s 1.0 -m 1400,1600
 
 ### Commande
@@ -59,5 +59,5 @@ Il faut faire attention au sens de comptage des encodeurs qui peut être négati
 
 CONTROLE EN BOUCLE FERMEE
 
-Le code associé est librobotcontrol-1.0.4/examples/src/rc_moteurs_tour_entier_fonctionne.c
+Le code associé à la boucle fermée est librobotcontrol-1.0.4/examples/src/rc_moteurs_tour_entier_fonctionne.c
 Il s'agit d'un contrôle en vitesse. La variable "val" utilisée dans le SWEEP Mode est la valeur qui régule l'intervalle PWM de façon à avoir des différences de valeurs d'encodeur constantes. En effet, l'erreur correspond à ((valeur_actuelle_encodeur - valeur_ancienne_encodeur) - (valeur_de_reference)).
