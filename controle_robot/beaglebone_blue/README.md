@@ -52,6 +52,8 @@ Le -c 3 correspond au channel du moteur épaule. Il faut donc bien le brancher s
 ### Explications du code
 
 Le contrôle se fait grâce aux valeurs des encodeurs (voir commentaires du code dans le switch mode).
+La première rotation du mouvement se fait avec les deux moteurs tournant dans le sens opposé, et le second mouvement uniquement avec le moteur 1.
+Il faut faire attention au sens de comptage des encodeurs qui peut être négatif (voir code).
 
 CONTROLE EN BOUCLE FERMEE
 
