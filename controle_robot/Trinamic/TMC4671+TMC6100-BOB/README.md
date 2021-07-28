@@ -8,7 +8,7 @@ Ces cartes permettent aussi de contrôler les moteurs par la commande FOC(Field-
 
 En effet, cette commande FOC- appelée également "commande vectorielle"- permet de garder une précision continue des commandes envoyées, notamment pour les moteurs BLDC (BrushLess Direct Courant). Pour se faire, c'est à partir de la consigne de vitesse du moteur que le flux et le couple nécessaire sont calculés et qu'ensuite les courants requis sont déduits. 
 
-La commande FOC est composée de deux forces Q (quadrature) et D (direct), perpendiculaires et respectivement parallèle à l'axe des pôles du rotor. 
+La commande FOC est composée de deux forces Q (quadrature) et D (direct), perpendiculaire et parallèle à l'axe des pôles du rotor. 
 
 ### Synoptique
 
